@@ -41,7 +41,7 @@ const cors = require('cors');
 //app.method
  app.post('/users',(req,res) =>{
      const newUser = req.body;
-     newUser.id = users.body;
+     newUser.id = users.length;
      users.push(newUser);
      console.log('hitting the post',req.body)
     //  res.send('post got hitted');
